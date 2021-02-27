@@ -26,10 +26,8 @@ return :(LYR . "WALLS")
 ( (LYR . "WALLS") (LEN . 240.0) (HGT . 96.0) )
 (assoc 'len wallinfo)
 (LEN . 240.0)
-
-(cdr (assoc 'lyr wallinfo))
+cdr (assoc 'lyr wallinfo))
 "WALLS"
-
 (nth 1 wallinfo)
 (LEN . 240.0)
 (car (nth 1 wallinfo))
