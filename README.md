@@ -18,9 +18,9 @@ car和cdr可叠加四层：例如caddr=car cdr cdr
 '((+ 2 3) b)=((+ 2 3) b)
 (list (+ 2 3) b)=(5 nil )
 list 是括号内用空格分隔的数据
-(subst a b list):--用a替换List中的b
-(append list1 atom)--追加atom to list1
-(reverse list ) --倒排List
+(subst a b list):--用a替换List中的b\\
+(append list1 atom)--追加atom to list1\\
+(reverse list ) --倒排List\\
 点对是种特殊的表（improper list），其存储空间小于普通的表，但是大多数的表处理函数不能处理点对，在编程时要注意。
 cons 函数处理参数时，如果所给的第二个元素不是表（或者不是空表‘（）），则返回一个点对:
 （cons 1 3）=（1 . 3 ）
