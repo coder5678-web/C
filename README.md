@@ -2,10 +2,15 @@
 lisp对表的处理是其最擅长的，lisp language=list process language，lisp提供了许多表处理函数，例如assoc ,car cdr cons,等。
 
 (car list) --返回第一元素
+
 (cdr list) --排除第一元素后的list ,若果变量list是点对，则返回点对后面的atom
+
 car和cdr可叠加四层：例如caddr=car cdr cdr
+
 (nth n list)-- 返回第n+1个元素
+
 生成列表的函数：cons
+
 (cons "abc" '())=("abc")
 (cons "abc" (cons "abc" '()))=("abc" "abc")
 可用这个方法生产字符串表
@@ -29,11 +34,17 @@ return :(LYR . "WALLS")
 cdr (assoc 'lyr wallinfo))
 "WALLS"
 (nth 1 wallinfo)
+
 (LEN . 240.0)
+
 (car (nth 1 wallinfo))
 LEN
+
 其它的点表处理函数
+
 (vl-consp list-variable)
-Determines whether or not a list is nil
+
+判断一个表是不是空表
+
 (subst newitem olditem lst)
-Searches a list for an old item and returns a copy of the list with a new item substituted in place of every occurrence of the old item
+替换一个旧元素为新元素
